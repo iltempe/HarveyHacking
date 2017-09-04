@@ -4,13 +4,12 @@ title: Needs
 permalink: /needs/
 ---
 <div class="panel-group">
-  {% assign needs_set = site.data.needs %}
-	{% for member in needs_set %}
+	{% for member in site.data.needs %}
 	<div class="panel-body">
 	<a href="https://api.harveyneeds.org/needs/{{ member.Id | datapage_url: '.' }}" class="list-group-item">
-		<h4 class="list-group-item-heading">{{member.location_name}}</h4>
-		<p class="list-group-item-text">{{member.location_address}}</p>
-    <p class="list-group-item-text">{{member.updatedAt}}</p>
+		<h4 class="list-group-item-heading">{{member.location_name | markdownify}}</h4>
+		<p class="list-group-item-text">{{member.location_address | markdownify}}</p>
+    <p class="list-group-item-text">{{member.needs}}</p>
 	</a>
 <div class="panel-footer">
 <ul class="share-buttons">
