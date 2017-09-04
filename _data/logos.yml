@@ -1,7 +1,7 @@
 - name: Add Data
   logo: /img/icone/segnala2-tci.png
   map: false
-  link: "https://api.harveyneeds.org/"
+  link: https://api.harveyneeds.org
 - name: Shelters
   logo: /img/icone/alloggi2-tci.png
   map: false
