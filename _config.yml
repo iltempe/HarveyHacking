@@ -5,98 +5,82 @@
 
 # If you are building a GitHub project page then use these settings:
 #url: "http://username.github.io/projectname"
-#baseurl: "http://terremotocentroitalia.info"
+baseurl: "/HarveyHacking"
 
 #baseurl: "https://github.com/emergenzeha/terremotocentro"
-url: "http://terremotocentroitalia.info"
+url: "https://iltempe.github.io/HarveyHacking"
 
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: Terremoto Centro Italia
+title: HarveyHacking
 
 # Short description of your site
-description: Un progetto per informare sugli eventi sismici che hanno colpito il Centro Italia nel 2016.
+description: A website to track Harvey facts in USA
 
 # --- Navigation bar options --- #
 # List of links in the navigation bar
 navbar-links:
-  Segnala: 
-    - Segnalazioni terremoto: "segnala/"
-    - Segnala dati: "dataset/"
-  Richieste:
-    - Fabbisogni: "fabbisogni/"
-    - Cerco Lavoro: "cerco_lavoro/"
-  Offerte:
-    - Risorse: "risorse-disponibili/"
-    - Alloggi: "alloggi/"
-    - Offro Lavoro: "offro_lavoro/"
-    - Ospitalità animali: "ospitalita_animali/"
-  Raccolte:
-    - Raccolte Fondi: "fondi/"
-    - Acquisti Solidali: "acquistisolidali/"
-  Aggiornamenti:
+  API: "https://api.harveyneeds.org/"
+  Needs: "fabbisogni/"
+  Shelters: "alloggi/"
+  Updates:
     - News: "news/"
-    - Eventi: "eventi/"
     - Blog: "post/"
-    - Storie: "storie/"
-    - Vittime: "vittime/"
-    - Bufale: "bufale/"
-  Utilità:
-    - Mappe: "mappe/"
-    - Dashboard: "dashboard/"
-    - Opendata: "opendata/"
-    - Link e contatti utili: "link_utili/"
-  Il Progetto:
+    - Victims: "vittime/"
+  Utilities:
+    - Maps: "mappe/"
+    - Links: "link_utili/"
+  The project:
    - About: "about/"
-   - Contribuisci: 'https://github.com/emergenzeHack/terremotocentro/wiki" target="_blank'
+   - Contribute: 'https://github.com/iltempe/HarveyHacking" target="_blank'
    - Press: "press/"
-   - Canali di Comunicazione: "canali/"
+   - Contact us: "canali/"
 
 # Image to show in the navigation bar - image must be a square (width = height)
 # Remove this parameter if you don't want an image in the navbar
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: /images/noun_8681.png
+avatar: /images/noun_752.png
 
 # --- Footer options --- #
 
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: TerremotoCentroItalia
+  name: HarveyHacking
   #email: "youremail@domain.com"
-  facebook: groups/1758670357733881/  # eg. daattali
-  github: emergenzeHack/terremotocentro    # eg. daattali
-  twitter: terremotocentro   # eg. daattali
+  facebook:   # eg. daattali
+  github: iltempe/HarveyHacking    # eg. daattali
+  twitter:    # eg. daattali
   linkedin:   # eg. daattali
   xing:       # eg. daattali
   stackoverflow:   # eg. "3943160/daattali"
-  instagram: terremotocentro # eg. daattali
-  youtube: yourlink # eg. user/daattali or channel/daattali
-  rss: https://emergenzehack.github.io/terremotocentro/feed.xml
-  telegram: https://telegram.me/terremotocentroitalia
-  medium: https://medium.com/@terremotocentroitalia
-  archiveorg: https://archive.org/details/@terremotocentroita
-  messenger: messenger
+  instagram:  # eg. daattali
+  youtube:  # eg. user/daattali or channel/daattali
+  rss:
+  telegram:
+  medium:
+  archiveorg:
+  messenger:
 
 # Select which links to show in the footer
 footer-links-active:
-  androidapp: true
-  rss: true
-  facebook: true
+  androidapp: false
+  rss: false
+  facebook: false
   email: false
-  twitter: true
-  github: true
+  twitter: false
+  github: false
   linkedin: false
   xing: false
   stackoverflow: false
-  instagram: true
+  instagram: false
   youtube: false
-  telegram: true
-  medium: true
-  archiveorg: true
-  messenger: true
+  telegram: false
+  medium: false
+  archiveorg: false
+  messenger: false
 
 # Select which share links to show in posts
 share-links-active:
@@ -112,14 +96,11 @@ share-links-active:
 # --- Misc --- #
 
 # Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-disqus: "terremotocentroitalia"
+#disqus: ""
 
 # Fill in your Google Analytics ID to track your website using GA
-google_analytics: "UA-47474515-3"
+#google_analytics: ""
 
-jekyll-crosseverything_to_medium:
-  enabled: false
-  useraccount: 'https://medium.com/terremotocentroitalia'
 
 # --- Don't need to touch anything below here (but you can if you want) --- #
 
@@ -154,7 +135,7 @@ defaults:
       show-avatar: true
 
 # Use tags pages (not recommended if you are deploying via GitHub pages, only set to true if deploying locally with ruby)
-link-tags: false
+#link-tags: true
 
 include:
   - _data
@@ -216,17 +197,6 @@ prose:
           element: "checkbox"
           label: "Publish"
           help: "Check to publish post, uncheck to hide."
-
-collections:
-  storie:
-    output: true
-
-page_gen-dirs: true # uncomment, if you prefer to generate named folders
-page_gen:
-  - data: issuesjson
-    template: issue
-    name: number
-    dir: issues
 
 gems:
   - jekyll-paginate

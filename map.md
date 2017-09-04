@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Mappe
+title: Maps
 permalink: /mappe/
 ---
 
