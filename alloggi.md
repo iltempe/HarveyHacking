@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Alloggi
+title: Shelters
 permalink: /alloggi/
 ---
 
