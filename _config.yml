@@ -22,8 +22,8 @@ description: A website to track Harvey facts in USA
 # List of links in the navigation bar
 navbar-links:
   API: "https://api.harveyneeds.org/"
-  Needs: "fabbisogni/"
-  Shelters: "alloggi/"
+  Needs: "needs/"
+  Shelters: "shelters/"
   Updates:
     - News: "news/"
     - Blog: "post/"

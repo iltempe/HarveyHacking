@@ -5,11 +5,11 @@
 - name: Shelters
   logo: /img/icone/alloggi2-tci.png
   map: false
-  link: alloggi
+  link: shelters
 - name: Needs
   logo: /img/icone/fabbisogni2-tci.png
   map: false
-  link: fabbisogni
+  link: needs
 - name: News
   logo: /img/icone/news2-tci.png
   map: false

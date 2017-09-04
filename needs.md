@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Needs
-permalink: /fabbisogni/
+permalink: /needs/
 ---
 <div class="panel-group">
         {% assign needs_set = site.data.needs %}

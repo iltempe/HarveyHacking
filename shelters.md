@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Shelters
-permalink: /alloggi/
+permalink: /shelters/
 ---
 
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0/dist/leaflet.css" />
